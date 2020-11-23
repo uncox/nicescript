@@ -10,6 +10,26 @@
   <script type="text/nicescript" src="xlink.jsx"></script>
 </head>
 <body>
-  It will be populated soon.
+  
+<button onclick="changeData()">Change Data</button>
+<script>
+  var data = {
+    host: 'example.com',
+    user: 'behnam',
+    tags: [
+      'simple',
+      'versatile',
+      'reactive',
+    ],
+    age: 38
+  };
+
+  function changeData() {
+    data.host = 'test.com';
+    data.tags.push('nice');
+    parser.refill();
+  }
+</script>
+It will be populated soon.
 </body>
 </html>
